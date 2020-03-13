@@ -23,6 +23,8 @@ function init () {
     goRight = document.getElementById("right");
     rocket = document.getElementById("rocket");
     let theHeight = 0;
+    let topMargin = 0;
+    let bottomMargin = 0;
     
 
     //create function shuttleTakeOff
@@ -65,8 +67,7 @@ function init () {
       missionAbort.addEventListener("click", youAbort);
 
       function moveDown() {
-        let bottomMargin = 0
-          bottomMargin = rocket.style.marginBottom += "10px"
+          bottomMargin = "-10px"
           rocket.style.marginBottom = bottomMargin;
 
           theHeight -= 10000;
@@ -76,8 +77,7 @@ function init () {
         goDown.addEventListener("click", moveDown);
 
         function moveUp() {
-          let topMargin = 0
-          topMargin = rocket.style.marginTop += "10px"
+          topMargin += "10px"
           rocket.style.marginTop = topMargin;
 
           theHeight += Number(10000);
