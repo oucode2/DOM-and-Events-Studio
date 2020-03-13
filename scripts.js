@@ -55,11 +55,12 @@ function init () {
       landing.addEventListener("click", shuttleLand);
     
     function youAbort() {
-      confirm("Confirm that you want to abort the mission."); 
-      if (confirm = true) {
-        paragraph.innerHTML =("Mission aborted."); 
-        shuttleBackground.style.backgroundColor = "green";
-        spaceShuttleHeight.innerHTML = 0;
+      let confrim = window.confirm('Confirm that you want to abort the mission.'); 
+        if (confirm = true) {
+
+          paragraph.innerHTML =("Mission aborted."); 
+          shuttleBackground.style.backgroundColor = "green";
+          spaceShuttleHeight.innerHTML = 0;
         }
                      
       }
